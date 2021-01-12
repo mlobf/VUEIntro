@@ -3,25 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Events and Methods</title>
-    <style>
-      .box {
-        background: green;
-        width: 300px;
-        height: 300px;
-      }
-    </style>
+    <title>Condicional Rendering</title>
   </head>
 
   <body>
     <div id="app">
-        <h1>{{lesson}}</h1>
-        <br />
-        <h2>Counter : {{counter}}</h2>
-        <button @click="incrementCounter">Increment ++</button> 
-      <br /><br />
-      <div class="box" @mouseover="overTheBox"></div>
-
+      <h1>Product: {{ product }}</h1>
+      <h2 v-if="quantity >= 20">Avalable</h2>
+      <h2 v-else-if="quantity > 0 && quantity < 20">Limited Availability</h2>
+      <h2 v-else>Sold Out</h2>
+      <br />
+      <h3 v-show="sale">On Sale!!!</h3>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="main.js"></script>
