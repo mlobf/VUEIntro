@@ -11,15 +11,16 @@
       crossorigin="anonymous"
     />
   </head>
-
-  <div id="app">
-    <h1>User Lists</h1>
-    <ul>
-      <li v-for="user in users">{{ user }}</li>
-    </ul>
-  </div>
-
   <body>
+    <div id="app">
+      <h1>User Lists</h1>
+      <ul>
+        <li v-for="user in users">{{ user }}</li>
+        <hr />
+        <p>Numbers from One to Ten</p>
+        <p v-for="number in 10">{{ number}}</p>
+      </ul>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="main.js"></script>
   </body>
