@@ -1,2 +1,2 @@
 # VUEIntro
-Just a little introduction on VUE Words!!!
+Just a little introduction on VUE !!!
